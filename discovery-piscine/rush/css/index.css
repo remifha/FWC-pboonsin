@@ -1,0 +1,94 @@
+:root {
+    --primary-green: #5a7d36; 
+    --warm-brown: #8e4a23;
+    --text-dark: #2c2c2c;
+    --text-muted: #555555;
+    --font-head: 'Press Start 2P', system-ui;
+    --font-body: 'Mali', cursive;
+    --font-name: 'Pixelify Sans', sans-serif;
+    --glass-bg: rgba(255, 255, 255, 0.45); 
+    --glass-border: rgba(255, 255, 255, 0.7);
+    --glass-shadow: rgba(0, 0, 0, 0.1);
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+    background: url("../images/wallpaper.gif") no-repeat center center fixed;
+    background-size: cover;
+    color: var(--text-dark);
+    font-family: var(--font-body);
+    display: flex; flex-direction: column; justify-content: center; align-items: center;
+    min-height: 100vh; text-align: center; overflow-x: hidden;
+}
+
+.home-container { padding: 40px 20px; width: 100%; }
+
+.hero-box {
+    background: var(--glass-bg);
+    backdrop-filter: blur(16px); 
+    border: 1px solid var(--glass-border);
+    padding: 40px 50px;
+    border-radius: 20px;
+    box-shadow: 0 8px 32px var(--glass-shadow);
+    margin: 0 auto 40px auto;
+    max-width: 800px;
+}
+
+h1 { 
+    color: var(--primary-green); 
+    font-size: 2.5rem; 
+    margin-bottom: 10px; 
+    font-weight: 600; 
+    font-family: var(--font-head);
+}
+.subtitle { 
+    color: var(--text-muted); 
+    font-size: 1.1rem; 
+}
+
+.card-grid { 
+    display: flex; 
+    gap: 30px; 
+    justify-content: center; 
+    flex-wrap: wrap; 
+    margin: 0 auto; 
+    max-width: 800px; 
+}
+.text-center { 
+    text-align: center; 
+}
+.highlight { 
+    color: var(--primary-green); 
+    font-size: 2rem; 
+    margin-top: 10px;
+    font-family: var(--font-name); 
+}
+
+.glass-card {
+    background: var(--glass-bg);
+    backdrop-filter: blur(16px);
+    border: 1px solid var(--glass-border);
+    border-radius: 20px; padding: 40px; width: 100%; max-width: 350px;
+    text-decoration: none; 
+    color: inherit; 
+    position: relative; 
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s; 
+    box-shadow: 0 8px 32px var(--glass-shadow);
+}
+.glass-card h2 { 
+    color: var(--warm-brown); 
+    font-weight: 500; 
+    font-size: 1.2rem; 
+}
+
+.glass-card:hover { 
+    transform: translateY(-8px); 
+    box-shadow: 0 15px 35px rgba(0,0,0,0.2); 
+}
+
+@media (max-width: 768px) {
+    .hero-box { padding: 30px 20px; }
+    h1 { font-size: 2rem; }
+}
