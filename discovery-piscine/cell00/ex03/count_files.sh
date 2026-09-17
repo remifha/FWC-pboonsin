@@ -1,2 +1,2 @@
-#!/bin/bash
-ls -1 | wc -l
+#!/bin/sh
+find . \( -type f -o -type d \) | wc -l | tr -d ' '
