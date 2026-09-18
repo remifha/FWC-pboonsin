@@ -1,0 +1,18 @@
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    transform: background-color 0.5s;
+}
+
+button{
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+    background-color: darkblue;
+    width: 100px; height: 50px;
+    border-radius: 10px;
+    color: white;
+}
+
+button:hover{
+    background-color: gray;
+}
