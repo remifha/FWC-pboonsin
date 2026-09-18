@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive</title>
+</head>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+        }
+        table{
+            width: 100%;
+            height: 100vh;
+            border: 1px solid black;
+            border-collapse: collapse;
+            table-layout: fixed;
+        }
+        td{
+            border: 1px solid black;
+            text-align: center;
+            vertical-align: middle;
+            font-size: 2vw;
+        }
+        .cell1{
+            background-color: lightpink;
+        }
+        .cell2{
+            background-color: lightblue;
+        }
+    </style>
+
+    <body>
+        <table>
+            <tr>
+                <td class="cell1">printf("Hello world");</td>
+                <td class="cell2">Hello World</td>
+            </tr>
+        </table>
+    </body>
+</html>
